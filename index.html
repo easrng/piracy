@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LOL, LIMEWIRE</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <meta property="og:image" content="https://cdn.glitch.global/4b236a0c-8e72-4367-b490-0e4969eb6727/vlcsnap-2022-05-05-07h36m19s337.png?v=1651750594699">
+    <meta property="og:type" content="video.other">
+    <meta property="og:video:url" content="https://cdn.glitch.global/4b236a0c-8e72-4367-b490-0e4969eb6727/limewire.mp4?v=1651750495634">
+    <meta property="og:video:width" content="640">
+    <meta property="og:video:height" content="480">
+    <style>     
+      body,html {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #000;
+      }
+    </style>
+  </head>  
+  <body>
+    <object type="application/x-shockwave-flash" 
+    data="https://cdn.glitch.global/4b236a0c-8e72-4367-b490-0e4969eb6727/limewire.swf?v=1651728874046" 
+    width="640px" height="480px" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)">
+      <param name="movie" value="https://cdn.glitch.global/4b236a0c-8e72-4367-b490-0e4969eb6727/limewire.swf?v=1651728874046" />
+      <param name="quality" value="high"/>
+    </object>
+    <script>
+      (window.onresize=()=>{
+        const obj=document.querySelector("object, ruffle-object");
+        const scale=(window.innerWidth*(3/4)>window.innerHeight)?window.innerHeight/480:window.innerWidth/640
+        obj.style.width=scale*640+"px"
+        obj.style.height=scale*480+"px"
+      })()
+    </script>
+  </body>
+</html>
